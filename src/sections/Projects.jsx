@@ -97,7 +97,7 @@ function ProjectCard({ project, index }) {
 
 export default function Projects() {
   return (
-    <section className="section projects">
+    <section className="section projects" id="projects">
       <div className="projects-header" style={{ marginBottom: 32 }}>
         <p className="eyebrow">Portfolio</p>
         <h2 className="section-heading">Selected Projects</h2>

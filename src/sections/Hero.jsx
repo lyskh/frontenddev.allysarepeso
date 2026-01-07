@@ -28,8 +28,8 @@ export default function Hero() {
           experiences.
         </p>
         <div className="hero-actions">
-          <button className="button" type="button">View Projects</button>
-          <button className="button" type="button">Get in Touch</button>
+          <a className="button" href="#projects">View Projects</a>
+          <a className="button" href="#contact">Get in Touch</a>
         </div>
       </div>
     </section>
