@@ -38,6 +38,15 @@ const projects = [
     repoUrl: "#",
     imageUrl: "/3dcards/ally-sa-repeso.png",
   },
+    {
+    id: 5,
+    title: "Floating Lamps",
+    description: "A cozy, meditative 3D browser experience where floating lanterns drift peacefully on a calm, cloudy nightsky.",
+    tech: ["React", "Vite", "ThreeJS", "Netlify"],
+    liveUrl: "https://allysarepeso.netlify.app/",
+    repoUrl: "#",
+    imageUrl: "/3dcards/ally-sa-repeso.png",
+  },
 ];
 
 function ProjectCard({ project, index }) {
