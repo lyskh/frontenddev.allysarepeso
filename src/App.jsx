@@ -5,6 +5,7 @@ import Hero from "./sections/Hero";
 import Projects from "./sections/Projects";
 import About from "./sections/About";
 import Contact from "./sections/Contact";
+import DesignShowcase from "./sections/DesignShowcase";
 
 export default function App() {
   const [showContent, setShowContent] = useState(false);
@@ -56,6 +57,19 @@ export default function App() {
 
           <motion.div
             custom={3}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, margin: "-100px" }}
+            variants={{
+              hidden: { opacity: 0, y: 40 },
+              visible: (custom) => ({ opacity: 1, y: 0, transition: { duration: 0.8, ease: "easeOut", delay: custom * 0.15 } }),
+            }}
+          >
+            <DesignShowcase />
+          </motion.div>
+
+          <motion.div
+            custom={4}
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, margin: "-100px" }}
